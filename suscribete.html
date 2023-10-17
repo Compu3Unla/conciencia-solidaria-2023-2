@@ -1,10 +1,75 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Suscribete</title>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>conciencia-solidaria-2023-</title> 
+		<link href="estilos.css" rel="stylesheet" type="text/css"> <!--vinculo a hojas de estilo CSS -->
+		<link rel="icon" type="imagen" ref=""> <!--vinculo a favicon-->
+	</head>
+	<body>
+	<!--------------------------------------------------------------------HEADER---------------------------------------------------------->
+		<header>
+			<img src= "img/logo.png" width="140px" height="120px" alt="inicio">
+			<nav>
+				<ul class=""> <!--aca va el nombre de la clase menu que falta crearla-->
+					<li><a href="#">Inicio</a></li>
+					<li><a href="campañas.html">Campañas</a></li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li><a href="suscribete.html">Suscribete</a></li>
+				</ul>
+			</nav>
+		</header>
+	<!---------------------------------------------------------------------MAIN------------------------------------------------------------->
+		<main>
+			<section>
+			<form method="post" action="mailto:eliana.es1987@gmail.com" target="_blank" enctype="text/plain" id="formulario">
+				
+			<label for="Nombre">* Nombre: </label>
+			<input type="name" name="Nombre" id="Nombre" maxlength="40" placeholder="Nombre y Apellido">
+				
+			<br>
+			
+			<label for="Email">* Email:</label>
+			<input type="email" name="Email" id="Email">
+			
+				<br>
+			
+			<label for="Edad">* Edad:</label>
+			<input type="number" min="18" max="100" name="Edad" id="Edad">
+				
+			<label for="Mensaje"> Sugerencias o consultas: </label>
+			<textarea class="textarea" name="Mensaje" id="Mensaje" maxlength="1000"></textarea>
+			
+				<br>
+				<div class="chekbox">
+					<span><label>Recibir información en mi correo<input type="checkbox" name="info" value="Info" id="Info"></label></span>
+					<!-------------El cuadrado del chekbox no queda centrado. No se porque-------->
+				
+				</div>
+			
 
-<body>
-</body>
+			<input type="reset" value="Borrar" class="borrar">
+			
+				<br>
+			
+				<input type="submit" value="Enviar" class="enviar">
+				
+		
+			
+			
+			
+		</form>
+	
+			</section>
+			
+			
+			
+		</main>
+	<!---------------------------------------------------------------------FOOTER------------------------------------------------------------>
+		<footer>
+
+		</footer>
+
+	</body>
 </html>
+ 
