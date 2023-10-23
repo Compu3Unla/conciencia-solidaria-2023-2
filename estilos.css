@@ -5,35 +5,51 @@ nav ul {
 }
 form {
 	padding: 20px;
-	width: 50%;
-	height: 100%;
+	margin: 15px;
+	width: 40%;
+	height: 500px;
 	background-color:#094264;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-around;
+	border-radius: 20px;
+}
+.borrar {
+	color: aliceblue;
+	border-radius: 5px;
+	border-color: aliceblue;
+	background-color: #094264;	
+}
+
+.borrar:hover {
+	background: #06D13B;
+}
+.enviar {
+	color: aliceblue;
+	border-radius: 5px;
+	border-color: aliceblue;
+	background-color: #094264;	
+}
+.enviar:hover {
+	background: #06D13B;
 }
 input {
 
-	width: 50%;
+	width: 40%;
 	height: 30px;		
 }
  .textarea {
-	 width: 90%;
-	 height: 100px;
+	 width: 70%;
+	 height: 150px;
 }
 label {
 	color: #FFFFFF;
 }
-.chekbox {
-	width: 90%;
+#Edad {
+	width: 20%;
 	height: auto;
-	color: #FFFFFF;
-	display: flex;
-	justify-content: center;
 }
-input chekbox {
-	width: 10%;
-	height: 10%;
-	display: flex;
-	justify-content: center;
-}
+
+	
+
