@@ -3,43 +3,132 @@
 	<head>
 		<meta charset="utf-8">
 		<title>conciencia-solidaria-2023-</title> 
-		<link href="estilos.css" rel="stylesheet" type="text/css"> <!--vinculo a hojas de estilo CSS -->
-		<link rel="icon" type="imagen" ref=""> <!--vinculo a favicon-->
+		<link href="estilos.css" rel="stylesheet" type="text/css">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
 	</head>
 	<body>
-	<!--------------------------------------------------------------------HEADER---------------------------------------------------------->
-		<header>
-			<img src= "img/logo.png" width="140px" height="120px" alt="inicio">
-			<nav>
-				<ul class=""> <!--aca va el nombre de la clase menu que falta crearla-->
-					<li><a href="#">Inicio</a></li>
-					<li><a href="campañas.html">Campañas</a></li>
-					<li><a href="nosotros.html">Nosotros</a></li>
-					<li><a href="suscribete.html">Suscribete</a></li>
-				</ul>
-			</nav>
-		</header>
-	<!---------------------------------------------------------------------MAIN------------------------------------------------------------->
-		<main>
-			<section> <!--Section presentacion-->
-				<p>Conciencia Solidaria ONG establece un vínculo entre las necesidades de urgencia socioambiental y las posibles soluciones a estas problemáticas. Utilizamos todas las herramientas puestas al servicio como la interrelación con otras personas o grupos para la acción. Fundamentalmente queremos concientizar sobre el cuidado del medioambiente y el impacto en la salud de los seres vivos.
-				</p>
+	<header>
+		<div class= "social-media">
+			<a href="https://twitter.com/ConSol_ONG" target="_blank"><img src="img/twitter.svg" width="30px" height= "30px" alt="tw"></a>
+			<a href= "https://www.instagram.com/concienciasolidariaong/?hl=es" target="_blank"><img src="img/instagram.svg" width="30px" height= "30px" alt="ig"></a>
+			<a href="https://www.facebook.com/ONGConcienciaSolidaria/?locale=es_LA" target="_blank"><img src="img/facebook.svg" width="30px" height= "30px" alt="fb"></a>
+			<a href=  "https://www.youtube.com/channel/UCShQfb-x-QUZ83n0MEgRD7w" target="_blank"><img src="img/youtube.svg" width="30px" height= "30px" alt="ytb"></a>
+		</div>
+		<a href= "index.html"><img src= "img/logo.png" width="120px" height="100px" alt="linicio" class="logo"></a> 
+		<nav class="nav">
+			<input type="checkbox" id="menu">
+			<label class="icon-menu" for="menu"></label>
+			<label class="icon-cancel" for="menu"></label>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="campañas.html">Campañas</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="suscribete.html">Suscribete</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+		<div class="container">
+			<div class="slider">
+			<ul>
+				<li><img src="img/sliderinicio/1.jpg"  alt="img1"></li>
+				<li><img src="img/sliderinicio/2.jpg" alt="img 2"></li>
+				<li><img src="img/sliderinicio/3.jpg" alt="img 3"></li>
+				<li><img src="img/sliderinicio/4.jpg" alt="img 4"></li>
+				<li><img src="img/sliderinicio/5.jpg" alt="img 5"></li>
+				<li><img src="img/sliderinicio/6.jpg" alt="img 6"></li>
+			</ul>
+			</div>
+			<div class= "text-container">
+				<p>Conciencia Solidaria es una <span class="bold">ONG </span> que establece un vínculo entre las necesidades de urgencia socioambiental y las posibles <span class="bold">soluciones a estas problemáticas.</span> </p>
+				<p>Utilizamos todas las herramientas puestas al servicio, como la interrelación con otras personas o grupos para la acción.</p><p>Fundamentalmente <span class="bold">queremos concientizar sobre el cuidado del medioambiente y el impacto en la salud de los seres vivos.</span></p><p>En esta sección encontrarás información sobre nuestros esfuerzos para conservar los bosques y las áreas naturales de nuestro entorno.</p>
+			</div>
+		</div>
+		</section>
+		<section>
+			<h2>Nuestras Campañas</h2>
+			<div class="conten-carrusel">
+				<div class="carousel-slide">
+					<img src="img/carruselinicio/a.jpg" width="400px" height="400px" alt="a" class="carousel-image">
+					<img src="img/carruselinicio/b.jpg" width="400px" height="400px" alt="a" class="carousel-image">
+					<img src="img/carruselinicio/d.jpg" width="400px" height="400px" alt="a" class="carousel-image">
+					<img src="img/carruselinicio/c.jpg" width="400px" height="400px" alt="a" class="carousel-image">
+				</div>
+				<a class="fizquierda" onclick="moveSlide(-1)">&#10094;</a>
+				<a class="fderecha" onclick="moveSlide(1)">&#10095;</a>
+			</div>
+		</section>
+		<section>
+			<h2>Nosotros</h2>
+			<div class="masnosotros">
+			<p>Surgimos en el año 2007, al obtener información sobre la posible instalación de grandes empresas de Megaminería Química en la zona norte de la provincia de Córdoba.</p>
+			<img src="img/nosotros.jpg" width="950px" height="500px" alt="linicio" class="logo">
+			</div>
+			<div>
+				<h4 class="boton"> <a class="vermas" href="nosotros.html">Leer m&aacute;s</a></h4>
+			</div>
+		</section>
+		<div>
+			<h2>Compromiso y Educación Ambiental</h2>
+		</div>
+		<section class="educacion">
+			<article>
+				<h3>Conservación Forestal</h3>
+				<img src="img/educación/forestal.jpg" width="300px" height="300px" alt="forestal"> 
+				<p>Los bosques son esenciales para la vida en la Tierra. Ayudan a preservar la biodiversidad y a combatir el cambio climático.</p>
+			</article>
+			<article>
+				<h3>Conservación del Agua</h3>
+				<img src="img/educación/agua.jpg" width="300px" height="300px" alt="agua"> 
+				<p>El agua es un recurso vital. Es esencial usarla de manera responsable y evitar su desperdicio.</p>
+			</article>
+			<article>
+				<h3>Energías Renovables</h3>
+				<img src="img/educación/energia.jpg" width="300px" height="300px" alt="energia"> 
+				<p>Las energías limpias y renovables, como la solar y la eólica, son clave para un futuro sostenible.</p>
+			</article>
+			<article>
+				<h3>Reciclaje y Reutilización</h3>
+				<img src="img/educación/reciclar.jpg" width="300px" height="300px" alt="energia"> 
+				<p>Reciclar materiales y reutilizar objetos contribuye a reducir la huella de carbono y conservar recursos.</p>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<div class="footercont">
+			<section class="footercolumn">
+				<img src="img/logofooter.png" width="120px" height="100px" alt="lf"/>
+				<p>Trabajamos por los ecosistemas naturales y la biodiversidad en Argentina.</p>
 			</section>
-			<section> <!--Nuestras campañas-->
-				<h3>Nuestras Campañas</h3> 
-				<!--Aca iria el carrusel de nuestras campañas aun no se como se hace je je!-->
+			<section class="footercolumn">
+				<h4>Redes</h4>
+				<a href= "https://www.instagram.com/concienciasolidariaong/?hl=es" target="_blank"><img src="img/instagram.svg" width="20px" height= "20px" alt="ig">Instagram</a>
+				<a href="https://www.facebook.com/ONGConcienciaSolidaria/?locale=es_LA" target="_blank"><img src="img/facebook.svg" width="20px" height= "20px" alt="fb">Facebook</a>
+				<a href="https://www.youtube.com/channel/UCShQfb-x-QUZ83n0MEgRD7w" target="_blank"><img src="img/youtube.svg" width="20px" height="20px" alt="Yte">YouTube</a>
 			</section>
-			<section> <!--Nosotros-->
-				<h3>Nosotros</h3> 
-					<p>Surgimos en el año 2007, al obtener información sobre la posible instalación de grandes empresas de Megaminería Química en la zona norte de la provincia de Córdoba.
-					</p>
+			<section class="footercolumn">
+				<h4>Contactos</h4>
+				<a href="https://linktr.ee/ConcienciaSolidariaONG" target="_blank"><img src="img/sobre.svg" width="20px" height="16px" alt="sb">web@concienciasolidaria.org.ar</a>
+				<a href="https://linktr.ee/ConcienciaSolidariaONG" target="_blank"><img src="img/telefono.svg" width="20px" height="20px" alt="sb">+54 911 6949 2781</a>
+				<a href="https://www.google.com/maps" target="_blank"><img src="img/direc.svg" width="20px" height="20px" alt="dr">Montes de Oca 2605,Bs. As, Arg.</a>
 			</section>
-		</main>
-	<!---------------------------------------------------------------------FOOTER------------------------------------------------------------>
-		<footer>
-
+			<section class="footercolumn">
+			</div>
+		<div class="footercred">
+			<p>CátedraW &copy; 2023 ONG Conciencia Solidaria.</p>
+		</div>
 		</footer>
-
+		<script>
+			let slideIndex = 0;
+			function moveSlide(step) {
+			const slides = document.getElementsByClassName("carousel-image");
+			slideIndex = (slideIndex + step + slides.length) % slides.length;
+			const slideWidth = slides[0].clientWidth;
+			const slideContainer = document.getElementsByClassName("carousel-slide")[0];
+			slideContainer.style.transform = 'translateX(' + (-slideWidth * slideIndex) + 'px)';
+}
+		</script>
 	</body>
 </html>
- 
